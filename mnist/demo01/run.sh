@@ -28,7 +28,7 @@
 #python exec_01_normalizeImage.py --input "../numbers/handwritten/5_001.png"
 
 #6 ( black number on gray background) 6,6,6,6,6
-#python exec_01_normalizeImage.py --input "../numbers/handwritten/6_010.png"
+python exec_01_normalizeImage.py --input "../numbers/handwritten/6_010.png"
 
 #8 ( black number on gray background) 8,2,8,8,8,8,8,2,8
 #python exec_01_normalizeImage.py --input "../numbers/handwritten/8_010.png"
@@ -57,7 +57,7 @@
 #python exec_01_normalizeImage.py --input "../numbers/handwritten/6_001.png"
 
 #7 ( American number format, black number on gray background) 1,1,1,1,1,1,1
-python exec_01_normalizeImage.py --input "../numbers/handwritten/7_011.png"
+#python exec_01_normalizeImage.py --input "../numbers/handwritten/7_011.png"
 
 #9 ( German number format, black number on gray background) 3,3,8,3,3,3,8,3,3
 #python exec_01_normalizeImage.py --input "../numbers/handwritten/9_010.png"

@@ -63,8 +63,8 @@ gray = cv2.resize(255-gray, (28, 28))
 
 
 """
- the trained images are white digits on a gray background.
- our current images are white digets on a black background.
+ the trained images are white digits on a black background.
+ our current images are white digets on a gray background.
  therefore we need change the background from gray to black.
 """
 (thresh, gray) = cv2.threshold(gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)

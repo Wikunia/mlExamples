@@ -5,12 +5,11 @@
 ##############################################################
 
 echo "Housekeeping, remove results from previous runs"
-cd output
-rm *.json
-rm *.npy
-cd ../results
-rm *.csv
-cd ..
+rm -R output
+mkdir output
+rm -R results
+mkdir results
+
 
 echo "start 01_dataCleaning.py"
 python exec_01_dataCleaning.py

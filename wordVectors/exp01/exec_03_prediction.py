@@ -70,5 +70,14 @@ print ("model.similarity('woman', 'man') :\n %s \n" % (model.similarity('woman',
 """
 #print("\n###################### Raw output   ######################\n")
 
+"""
+(16492,300)
+Number of columns == feature vector ( num_features = 300 ) from exec_02_word2vec_alg.py
+Setting the minimum word count to 40 (min_word_count = 40) gave us a total vocabulary of 16492
+"""
+#print (type(model.syn0))
+#print (model.syn0.shape)
+
+
 #print ("model['man'] : \n %s \n \n" % (model['man'])) # Individual word vectors can be accessed by vocabulary
 #print ("model['man'] : \n %s \n \n" % (model.syn0[1])) # Or accessed by index

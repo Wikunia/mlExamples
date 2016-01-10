@@ -71,7 +71,7 @@ def clean_model_train_persist_visualize(searchWord1, searchWord2):
 
 
 
-def load_visualize():
+def load_visualize(searchWord1, searchWord2):
 
     dictionary = pickle.load( open( "output/dictionary.pickle", "rb"))
     reverse_dictionary = pickle.load( open( "output/reverse_dictionary.pickle", "rb"))
@@ -79,7 +79,7 @@ def load_visualize():
     final_embeddings_normalized = pickle.load( open( "output/final_embeddings_normalized.pickle", "rb"))
 
     # prediction set to sample nearest neighbors.
-    valid_examples = np.array([dictionary['four'], dictionary['american']])
+    valid_examples = np.array([dictionary[searchWord1], dictionary[searchWord2]])
 
     visualize_similarities_text(final_embedings_similarity,reverse_dictionary,valid_examples)
     visualize_plot_with_labels(final_embeddings_normalized, reverse_dictionary)
@@ -110,4 +110,4 @@ if (onlyVisualize == "false"):
     clean_model_train_persist_visualize(searchWord1,searchWord2)
 if (onlyVisualize == "true"):
     # This function can load the similarity embedings from disk and visualize them
-    load_visualize()
+    load_visualize(searchWord1,searchWord2)

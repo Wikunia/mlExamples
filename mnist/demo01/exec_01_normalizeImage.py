@@ -108,6 +108,7 @@ gray = np.lib.pad(gray,(rowsPadding,colsPadding),'constant',constant_values=0)
 
 shiftx,shifty = getBestShift(gray)
 shifted = shift(gray,shiftx,shifty)
+gray = shifted
 
 
 # save the processed images
